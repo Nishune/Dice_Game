@@ -52,6 +52,6 @@ if (dice2 === 6) {
     player2.setAttribute("src", "./images/dice6.png");
 }
 if (player1Score > player2Score) {
-
-}
+    scoreText.innerText = "Player 1 wins";
+} 
 }
