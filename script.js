@@ -1,7 +1,7 @@
 const myBtn = document.querySelector("#myBtn");
 const player1 = document.querySelector("#player1");
 const player2 = document.querySelector("#player2");
-
+const scoreText = document.querySelector("#scoreText");
 
 myBtn.addEventListener("click", rollDice);
 
@@ -52,6 +52,6 @@ if (dice2 === 6) {
     player2.setAttribute("src", "./images/dice6.png");
 }
 if (player1Score > player2Score) {
-    
+
 }
 }
