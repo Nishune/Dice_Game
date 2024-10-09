@@ -5,15 +5,10 @@ const scoreText = document.querySelector("#scoreText");
 
 myBtn.addEventListener("click", rollDice);
 
-
-
-
 function rollDice() {
 
 let dice1 = Math.floor((Math.random() * 6) + 1);
 let dice2 = Math.floor((Math.random() * 6) + 1);
-player1Score = dice1;
-player2Score = dice2;
 
 if (dice1 === 1) {
     player1.setAttribute("src", "./images/dice1.png");
@@ -51,11 +46,11 @@ if (dice1 === 6) {
 if (dice2 === 6) {
     player2.setAttribute("src", "./images/dice6.png");
 }
-if (player1Score > player2Score) {
+if (dice1 > dice2) {
     scoreText.innerText = "Player 1 wins!";
-} else if (player2Score > player1Score) {
+} else if (dice2 > dice1) {
     scoreText.innerText = "Player 2 wins!";
-} else if (player1Score === player2Score) {
+} else if (dice1 === dice2) {
     scoreText.innerText = "Draw!";
 }
 }
